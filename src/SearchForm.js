@@ -11,6 +11,7 @@ export default function SearchForm() {
 
   function search(event) {
     event.preventDefault();
+    ///documentation https://dictionaryapi.dev/
     const urlApi = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
     axios.get(urlApi).then(handleResponse);
   }
