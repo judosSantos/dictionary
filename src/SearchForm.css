@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&family=Instrument+Serif:ital@0;1&display=swap");
 
-.App {
-  text-align: center;
-  background-color: #f9fafc;
+.search-bar {
+  margin-top: 28px;
+  margin-bottom: 40px;
+  border: 0.1px solid #475569;
+  border-radius: 25px;
+  padding: 12px 260px;
 }

@@ -1,17 +1,18 @@
 import "./App.css";
-import Header from "./header";
-import HeroSection from "./heroSection";
+import Header from "./Header.js";
+import HeroSection from "./HeroSection.js";
+import Footer from "./Footer.js";
 
 function App() {
   return (
     <div className="App">
-      <header>
+      <div className="container">
         <Header />
-      </header>
 
-      <HeroSection />
+        <HeroSection />
 
-      <footer></footer>
+        <Footer />
+      </div>
     </div>
   );
 }
