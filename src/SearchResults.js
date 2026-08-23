@@ -6,7 +6,7 @@ import Meaning from "./Meaning.js";
 export default function SearchResults(props) {
   if (props.results) {
     return (
-      <di className="container">
+      <div className="container">
         <div className="search-results">
           <h1 className="word">{props.results.word}</h1>
 
@@ -46,7 +46,7 @@ export default function SearchResults(props) {
             </div>
           </div>
         </div>
-      </di>
+      </div>
     );
   } else {
     return null;

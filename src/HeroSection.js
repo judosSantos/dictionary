@@ -8,8 +8,7 @@ export default function HeroSection() {
       <div className="title">
         <h1>Explore the language of everything</h1>
         <h2>
-          A comprehensive, modular concept map and terminology index across
-          academic disciplines.{" "}
+          An interactive dictionary for exploring words and their meanings.{" "}
         </h2>
       </div>
       <SearchForm />

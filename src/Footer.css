@@ -21,3 +21,34 @@
 a:hover {
   text-decoration: underline;
 }
+
+.heroSection {
+  background-color: rgb(249, 250, 252);
+  margin: 80px 40px 200px 40px;
+}
+.title h1 {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 64px;
+  color: #475569;
+}
+
+.title h2 {
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  color: #475569;
+}
+
+@media (max-width: 450px) {
+  .heroSection h1 {
+    font-size: 35px;
+  }
+
+  .heroSection h2 {
+    font-size: 15px;
+  }
+}

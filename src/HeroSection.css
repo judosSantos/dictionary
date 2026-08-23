@@ -17,6 +17,16 @@
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  font-size: 18px;
+  font-size: 20px;
   color: #475569;
+}
+
+@media (max-width: 450px) {
+  .heroSection h1 {
+    font-size: 35px;
+  }
+
+  .heroSection h2 {
+    font-size: 15px;
+  }
 }

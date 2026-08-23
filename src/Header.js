@@ -13,7 +13,7 @@ export default function Header() {
               width="30"
               class="d-inline-block align-text-top"
             />
-            Bootstrap
+            JS Dictionary
           </a>
         </div>
       </nav>

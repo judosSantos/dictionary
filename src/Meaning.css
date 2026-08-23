@@ -1,0 +1,22 @@
+.meanings {
+  margin-top: 20px;
+}
+
+.meaning-definition {
+  margin-bottom: 24px;
+}
+
+.meaning-definition strong {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.meaning-definition p {
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+.meaning-definition .example {
+  font-style: italic;
+  margin-top: 4px;
+}
