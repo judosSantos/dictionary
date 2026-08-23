@@ -23,10 +23,8 @@ export default function Images(props) {
   }
 
   useEffect(() => {
-    if (props.word) {
-      searchImages();
-    }
-  }, [props.word]);
+    searchImages();
+  }, [searchImages]);
 
   return (
     <div className="images-results row">
