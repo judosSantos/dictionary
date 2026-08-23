@@ -1,9 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&family=Instrument+Serif:ital@0;1&display=swap");
-
-.search-bar {
+.form-search {
   margin-top: 28px;
   margin-bottom: 40px;
+}
+
+.form-search form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
   border: 0.1px solid #475569;
   border-radius: 25px;
-  padding: 12px 260px;
+  overflow: hidden;
+}
+
+.search-bar {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 12px 20px;
+  font-size: 16px;
+}
+
+.form-search button {
+  border: none;
+  background: transparent;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.form-search button img {
+  width: 24px;
+  height: 24px;
 }

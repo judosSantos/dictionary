@@ -1,18 +1,25 @@
 import React, { useState } from "react";
 import "./SearchForm.css";
 import axios from "axios";
+import SearchResults from "./SearchResults.js";
+import searchIcon from "./searchIcon.png";
 
 export default function SearchForm() {
-  let [word, setWord] = useState("");
+  const [word, setWord] = useState("");
+  const [results, setResults] = useState(null);
 
   function handleResponse(response) {
-    console.log(response.data[0]);
+    console.log(response.data);
+    setResults(response.data);
   }
 
   function search(event) {
     event.preventDefault();
+
     ///documentation https://dictionaryapi.dev/
-    const urlApi = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
+    const key = "76ab2ecoa4e0c3c3807ad4cff1b5696t";
+    const urlApi = `https://api.shecodes.io/dictionary/v1/define?word=${word}&key=${key}`;
+
     axios.get(urlApi).then(handleResponse);
   }
 
@@ -24,7 +31,16 @@ export default function SearchForm() {
     <div className="form-search">
       <form onSubmit={search}>
         <input className="search-bar" type="search" onChange={updateWord} />
+        <button type="submit">
+          <img
+            className="search-icon"
+            src={searchIcon}
+            alt="Search"
+            width="30"
+          />
+        </button>
       </form>
+      <SearchResults results={results} />
     </div>
   );
 }
