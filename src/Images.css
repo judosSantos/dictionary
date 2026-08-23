@@ -1,8 +1,4 @@
-.result-card {
-  background: white;
-  border: 1px solid #dce3ec;
-  border-radius: 14px;
-  padding: 18px;
+.images-results {
   margin-bottom: 14px;
   margin-top: 14px;
 }
@@ -10,5 +6,6 @@
 @media (max-width: 450px) {
   .images-results img {
     height: 100px;
+    margin-top: 14px;
   }
 }
