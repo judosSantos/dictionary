@@ -39,6 +39,7 @@ export default function SearchForm() {
           />
         </button>
       </form>
+
       <SearchResults results={results} />
     </div>
   );
