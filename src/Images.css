@@ -1,0 +1,21 @@
+.result-card {
+  background: white;
+  border: 1px solid #dce3ec;
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 14px;
+  margin-top: 14px;
+}
+
+@media (max-width: 450px) {
+  .search-results {
+    margin: 20px 0 0 0;
+    padding: 0px;
+  }
+  .exemple {
+    display: none;
+  }
+  .synonym {
+    display: none;
+  }
+}

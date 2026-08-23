@@ -3,13 +3,13 @@ import "./SearchForm.css";
 import axios from "axios";
 import SearchResults from "./SearchResults.js";
 import searchIcon from "./searchIcon.png";
+import Images from "./Images.js";
 
 export default function SearchForm() {
   const [word, setWord] = useState("");
   const [results, setResults] = useState(null);
 
   function handleResponse(response) {
-    console.log(response.data);
     setResults(response.data);
   }
 

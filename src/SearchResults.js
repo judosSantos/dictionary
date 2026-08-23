@@ -2,6 +2,7 @@ import React from "react";
 import "./SearchResults.css";
 import folder from "./folder.png";
 import Meaning from "./Meaning.js";
+import Images from "./Images.js";
 
 export default function SearchResults(props) {
   if (props.results) {
@@ -43,6 +44,9 @@ export default function SearchResults(props) {
                 />
               </span>
               <strong>Images</strong>
+            </div>
+            <div className="images-results">
+              <Images word={props.results.word} />
             </div>
           </div>
         </div>
