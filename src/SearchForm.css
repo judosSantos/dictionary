@@ -10,9 +10,10 @@
   width: 100%;
   max-width: 700px;
   margin: 0 auto;
-  border: 0.1px solid #475569;
+  border: 0.1px solid #dce3ec;
   border-radius: 25px;
   overflow: hidden;
+  box-shadow: 0 4px 16px rgba(71, 85, 105, 0.08);
 }
 
 .search-bar {
