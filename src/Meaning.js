@@ -13,7 +13,7 @@ export default function Meaning(props) {
             <p className="exemple">exemple: {meaning.example}"</p>
           )}
           {meaning.synonyms && (
-            <p className="synonym"> synonym: {meaning.synonyms}</p>
+            <p className="synonym"> synonym: {meaning.synonyms.join(" - ")}</p>
           )}
         </div>
       ))}
