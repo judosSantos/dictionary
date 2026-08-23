@@ -47,17 +47,22 @@
 
 .meanings {
   margin-left: 44px;
-  margin-top: 20px;
+  margin-top: 40px;
   color: #53627a;
 }
 
 .meaning-definition strong {
   font-size: 18px;
   font-weight: 600;
+  margin-top: 10px;
 }
 .meaning-definition p {
   font-size: 16px;
   font-weight: 300;
+}
+.meaning-title {
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
 
 .description {
@@ -66,11 +71,16 @@
   line-height: 1.6;
 }
 
+.exemple {
+  color: #53627a;
+  line-height: 1.3;
+  font-size: 14px;
+  font-style: italic;
+}
+
 .synonyms {
   display: flex;
-  flex-wrap: wrap;
   gap: 8px;
-  margin-left: 36px;
 }
 
 .synonym {
@@ -81,4 +91,5 @@
   color: #53627a;
   font-size: 14px;
   font-weight: 500;
+  margin-right: 40px;
 }
