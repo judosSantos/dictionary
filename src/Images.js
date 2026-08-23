@@ -1,18 +1,24 @@
 import React, { useState, useEffect } from "react";
+import "./Images.css";
 
 import axios from "axios";
 
 export default function Images(props) {
   const [images, setImages] = useState([]);
+
   function handleImagesResults(response) {
     console.log(response.data);
     setImages(response.data.photos);
   }
+  useEffect(() => {
+    if (!props.word) {
+      return;
+    }
 
-  function searchImages() {
     const pexelsKey =
       "EEepXNZUarzM0oOGSMvaI77wPw42wVSYulRmQhVIQkNixhIDVuuWv14r";
-    const pexelsApi = `https://api.pexels.com/v1/search?query=${props.word}`;
+    const pexelsApi = `https://api.pexels.com/v1/search?query=${props.word}&per_page=3`;
+
     axios
       .get(pexelsApi, {
         headers: {
@@ -20,11 +26,7 @@ export default function Images(props) {
         },
       })
       .then(handleImagesResults);
-  }
-
-  useEffect(() => {
-    searchImages();
-  }, [searchImages]);
+  }, [props.word]);
 
   return (
     <div className="images-results row">

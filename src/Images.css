@@ -8,14 +8,7 @@
 }
 
 @media (max-width: 450px) {
-  .search-results {
-    margin: 20px 0 0 0;
-    padding: 0px;
-  }
-  .exemple {
-    display: none;
-  }
-  .synonym {
-    display: none;
+  .images-results img {
+    height: 100px;
   }
 }
