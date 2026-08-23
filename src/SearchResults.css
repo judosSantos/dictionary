@@ -1,5 +1,5 @@
 .search-results {
-  margin: 0;
+  margin: 20px 0 0 0;
   padding: 30px 40px;
   background-color: #f9fafc;
   color: #475569;
@@ -92,4 +92,17 @@
   font-size: 14px;
   font-weight: 500;
   margin-right: 40px;
+}
+
+@media (max-width: 450px) {
+  .search-results {
+    margin: 20px 0 0 0;
+    padding: 0px;
+  }
+  .exemple {
+    display: none;
+  }
+  .synonym {
+    display: none;
+  }
 }

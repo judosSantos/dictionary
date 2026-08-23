@@ -3,7 +3,7 @@ import "./Footer.css";
 
 export default function Footer() {
   return (
-    <div className="container row footer-container">
+    <div className="footer-container">
       <p>Designed & developed by Juliana Santos</p>
       <p>Built with React · JavaScript · Axios · SheCodes API.</p>
       <p>
