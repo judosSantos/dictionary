@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./SearchForm.css";
 import axios from "axios";
-import SearchResults from "./SearchResults.js";
+import SearchResults from "./searchResults.js";
 import searchIcon from "./searchIcon.png";
 
 export default function SearchForm() {
